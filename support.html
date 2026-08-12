@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support – Babyly</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:     #A4C8D8;
+      --blue-mid: #7AAFC3;
+      --cream:    #F9F6F2;
+      --text:     #1A1A1A;
+      --muted:    #7A7A7A;
+      --white:    #FFFFFF;
+      --divider:  #EEEBE6;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: rgba(249,246,242,0.95);
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .nav-wordmark {
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    /* ── MAIN ── */
+    main {
+      flex: 1;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 72px 24px 80px;
+      width: 100%;
+    }
+
+    .page-eyebrow {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--blue-mid);
+      margin-bottom: 16px;
+    }
+
+    .page-title {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+
+    .page-sub {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 48px;
+    }
+
+    /* ── CONTACT CARD ── */
+    .contact-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 56px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      background: #EBF5F9;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+
+    .contact-label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .contact-value {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--blue-mid);
+      text-decoration: none;
+    }
+
+    .contact-value:hover {
+      text-decoration: underline;
+    }
+
+    .contact-note {
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* ── FAQ ── */
+    .faq-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      letter-spacing: -0.3px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .faq-item {
+      border-top: 1px solid var(--divider);
+      padding: 20px 0;
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--divider);
+    }
+
+    .faq-q {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .faq-a {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .faq-a a {
+      color: var(--blue-mid);
+      text-decoration: none;
+    }
+
+    .faq-a a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--text);
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-wordmark {
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--white);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--white); }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 20px; }
+      footer { padding: 28px 20px; }
+      .contact-card { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-wordmark">Babyly</a>
+  </nav>
+
+  <main>
+    <p class="page-eyebrow">Help & Support</p>
+    <h1 class="page-title">How can we help?</h1>
+    <p class="page-sub">We're a small team and we read every message. Reach out and we'll get back to you as soon as we can.</p>
+
+    <div class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <p class="contact-label">Email us</p>
+        <a href="mailto:app.babyly@gmail.com" class="contact-value">app.babyly@gmail.com</a>
+        <p class="contact-note">We typically respond within 1–2 business days.</p>
+      </div>
+    </div>
+
+    <h2 class="faq-title">Frequently asked questions</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <p class="faq-q">How do I delete my account?</p>
+        <p class="faq-a">Go to Profile → Settings → Delete Account. This will permanently remove your account, listings, and ratings. This action cannot be undone.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How does the ratings system work?</p>
+        <p class="faq-a">After a transaction, the seller marks the item as sold or claimed and leaves a rating for the buyer. The buyer then has 30 days to confirm the transaction and rate the seller back. Both ratings become visible on your public profile once confirmed.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How do I report a listing or user?</p>
+        <p class="faq-a">On any listing detail page, tap the report icon. In a conversation, tap the menu icon and select Report. Our team reviews all reports and takes action within 24–48 hours.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">Is Babyly responsible for transactions?</p>
+        <p class="faq-a">No. Babyly is a platform that connects buyers and sellers — all transactions are conducted directly between users. We are not responsible for payment, item quality, or disputes. See our <a href="/terms">Terms of Service</a> for full details.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">What items are not allowed on Babyly?</p>
+        <p class="faq-a">Recalled products, used car seats, unsafe sleep products (drop-side cribs, sleep positioners), weapons, drugs, counterfeit items, and anything prohibited by law. See our <a href="/terms">Terms of Service</a> for the full list.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">How do I change my password?</p>
+        <p class="faq-a">Go to Profile → Settings → Change Password. We'll send a reset link to your email address.</p>
+      </div>
+
+      <div class="faq-item">
+        <p class="faq-q">My question isn't listed here.</p>
+        <p class="faq-a">Email us at <a href="mailto:app.babyly@gmail.com">app.babyly@gmail.com</a> and we'll help you out.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <span class="footer-wordmark">Babyly</span>
+    <ul class="footer-links">
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms of Service</a></li>
+      <li><a href="mailto:app.babyly@gmail.com">Contact</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
